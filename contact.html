@@ -7,6 +7,8 @@
     <meta name="description" content="Contact page of my portfolio website.">
     <title>Contact | My Portfolio</title>
 
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+
     <link rel="stylesheet" href="style.css">
 </head>
 
@@ -14,39 +16,47 @@
 
     <header>
 
-        <h1>Contact</h1>
+        <h1>CONTACT</h1>
 
-        <nav>
-            <a href="index.html">Home</a>
-            <a href="about.html">About</a>
-            <a href="contact.html">Contact</a>
+        <nav class="nav justify-content-center">
+
+            <a class="nav-link" href="index.html">Home</a>
+            <a class="nav-link" href="about.html">About</a>
+            <a class="nav-link active" href="contact.html">Contact</a>
+
         </nav>
 
     </header>
 
-    <main>
+    <main class="container mt-4">
 
         <section>
 
-            <h2>Contact Form</h2>
-
             <form id="contactForm">
 
-                <label>Name</label><br>
-                <input type="text" id="name"><br><br>
+                <div class="mb-3">
+                    <label class="form-label">Name</label>
+                    <input type="text" id="name" class="form-control">
+                </div>
 
-                <label>Email</label><br>
-                <input type="email" id="email"><br><br>
+                <div class="mb-3">
+                    <label class="form-label">Email</label>
+                    <input type="email" id="email" class="form-control">
+                </div>
 
-                <label>Message</label><br>
-                <textarea id="message"></textarea><br><br>
+                <div class="mb-3">
+                    <label class="form-label">Phone Number</label>
+                    <input type="text" id="phone" class="form-control">
+                </div>
 
-                <button type="submit">
+                <div class="mb-3">
+                    <label class="form-label">Message</label>
+                    <textarea id="message" class="form-control" rows="5"></textarea>
+                </div>
+
+                <button type="submit" class="btn btn-primary">
                     Send Message
                 </button>
-
-                <label>Phone Number</label><br>
-                <input type="text" id="phone"><br><br>
 
             </form>
 

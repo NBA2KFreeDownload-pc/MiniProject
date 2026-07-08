@@ -5,14 +5,18 @@ body {
 }
 
 header {
-    background-color: navy;
+    background-color: rgb(255, 255, 255);
     color: white;
     text-align: center;
     padding: 15px;
 }
 
 h1 {
+    color: black;
     margin: 0;
+    font-family: "Times New Roman", Times, serif;
+    margin-bottom: 20px;
+    padding: 20px;
 }
 
 h2 {
